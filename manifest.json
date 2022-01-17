@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Stay Productive",
+    "version": "1.0.0",
+    "description":"Blocks the social media to be more productive",
+    "content_scripts":[
+        {
+            "matches": ["<all_urls>"],
+            "js": ["main.js"]
+        }
+    ],
+    "icons": { 
+        "16":  "icon16.png",
+        "48":  "icon48.png",
+        "128": "icon128.png" 
+    },
+    "browser_action": {
+        "default_icon": "images/16.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
+
